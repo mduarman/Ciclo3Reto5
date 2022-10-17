@@ -1,0 +1,526 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Mulish";
+}
+.divHome {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 1.5rem;
+}
+.divHome:nth-child(3) {
+justify-content: end;
+    align-content: end;
+}
+.divContenedorHome{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 50%;
+    align-items: center;
+    padding: 25px;
+    gap: 15px;
+    justify-content: end;
+
+}
+.divFraseCelebre{
+    width: 90%;
+    height: 100%;
+    border: 1px solid 	white;
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-position:  center;
+    transition: transform .8s;
+}
+.divFraseCelebre:hover{
+    transform: scale(1.2);
+}
+.pFraseCelebre{
+    color: 	#00CCFF;
+    font-size: 3rem;
+    font-family: 'Nanum Pen Script', cursive;;
+    text-align: end;
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 65px;
+
+}
+.h5Frase{
+    color: #ACD9B2	;
+    font-size: 1.5rem;
+    font-family: 'Nanum Pen Script', cursive;;
+    text-align: end;
+    width: 90%;
+}
+.divHome h1 {
+    text-align: center;
+    font-size: 7rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+h2 {
+    font-size: 8rem;
+    color: burlywood;
+    font-weight: bold;
+    justify-content: center;
+    margin: 15px 0 5px 0;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.navHome {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+}
+.navHome ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+}
+.navHome ul li a {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 5px 0px;
+    transition: .5s;
+    z-index: 1;
+}
+.navHome ul li a:hover{
+    color: blue;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+
+
+.divPrincipalCategory{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.h2Category{
+    font-size: 5rem;
+    color: white;
+}
+.ulCategory{
+
+}
+.ulCategory li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+}
+.ulCategory li a{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 10px 0px;
+    transition: .5s;
+    z-index: 1;
+}
+.ulCategory li a:hover{
+    color: blue;
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+
+
+
+.sectionBoat{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-position:  center;
+}
+.sectionClient{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(client.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.sectionMessage{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(message.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.sectionReservation{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(reservation.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.sectionReport{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(report.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.sectionCategory{
+    width: 100%;
+    height: 100vmax;
+    background-image: url(category.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+/*
+=====================================================================
+*/
+.divContenedor{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+.divContenedorIzq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+.divIzqJr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: #f7f7f7 ;
+    padding: 5px;
+    border: 3px solid burlywood;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.divContenedorDer{
+    width: auto;
+    height: auto;
+    background-color: #F7F7F7;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 3rem;
+    color: burlywood;
+    font-weight: bold;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+.div-table{
+    border: 2px solid  #F7F7F7;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pConsulta1{
+    width: auto;
+}
+
+
+thead {
+    font-weight: bold ;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.div-button{
+    background-color: #F7F7F7;
+    padding: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid  #F7F7F7;
+    border-radius: 15px;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid  burlywood;
+    border-radius: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+    gap: 15px;
+}
+.btnConsulta1{
+    cursor: pointer;
+    font-family: "Mulish";
+    font-weight: bold;
+    font-size: 2rem;
+    border-color: #ACD9B2;
+    width:min-content;
+    height: auto;
+    border-radius: 20px;
+    background-color: #ACD9B2;
+    padding: 7px;
+    transition: transform .4s;
+    margin-bottom: 5px;
+}
+
+.formDateReport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.formDate{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: end;
+}
+.divSelectionClientBoat{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 5px 5px;
+}
+.div-form span{
+    text-align: end;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: center;
+}
+.div-form input{
+    align-content: center;
+}
+.divcatBoteInput {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 100%;
+    border: 1px solid #f7f7f7;
+    margin-bottom: 25px;
+}
+.divReportStatus{
+    border: 2px solid burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.inputEnviarId {
+    width: 50px;
+}
+.inputCategory {
+    width: 188px;
+}
+input {
+    border: 1px solid black;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    margin: 5px 0 5px 0;
+}
+select{
+    border: 1px solid black;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    margin: 5px 0 5px 0
+}
+.input-id {
+    width: 45px;
+    font-size: 2rem;
+    padding-right: 0px;
+}
+.lista {
+    width: 55px;
+}
+.pbarcos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 5px;
+}
+button {
+    cursor: pointer;
+    font-family: "Mulish";
+    font-weight: bold;
+    font-size: 2rem;
+    border-color: #ACD9B2;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: #ACD9B2;
+    padding: 5px;
+    transition: transform .4s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+label{
+    font-size: 2rem;
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+    align-content: center;
+}
+
+/*====================================================================================*/
+
+
+/*====================================================================================*/
+ul {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: burlywood;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+}
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+ul li a:hover {
+    color: blue;
+}
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.divFecha{
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    padding: 10px;
+}
+
